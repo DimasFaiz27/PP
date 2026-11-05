@@ -47,3 +47,25 @@ int pinjamBuku() {
 
     return 0;
 }
+
+int kembalikanBuku() {
+    int nomor;
+
+    tampilkanBuku();
+
+    cout << "\nPilih nomor buku: ";
+    cin >> nomor;
+
+    if (nomor < 1 || nomor > 5) {
+        cout << "Nomor tidak valid!\n";
+    }
+    else if (tersedia[nomor - 1] == 0) {
+        tersedia[nomor - 1] = 1;
+        cout << "Buku berhasil dikembalikan!\n";
+    }
+    else {
+        cout << "Buku belum dipinjam!\n";
+    }
+
+    return 0;
+}
