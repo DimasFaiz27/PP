@@ -88,3 +88,17 @@ int main() {
         else if (pilihan == 2) {
             pinjamBuku();
         }
+        else if (pilihan == 3) {
+            kembalikanBuku();
+        }
+        else if (pilihan == 4) {
+            cout << "Terima kasih!\n";
+        }
+        else {
+            cout << "Pilihan tidak valid!\n";
+        }
+
+    } while (pilihan != 4);
+
+    return 0;
+}
