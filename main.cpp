@@ -69,3 +69,22 @@ int kembalikanBuku() {
 
     return 0;
 }
+
+int main() {
+    int pilihan;
+
+    do {
+        cout << "\n=== SISTEM PEMINJAMAN BUKU ===\n";
+        cout << "1. Lihat Daftar Buku\n";
+        cout << "2. Pinjam Buku\n";
+        cout << "3. Kembalikan Buku\n";
+        cout << "4. Keluar\n";
+        cout << "Pilih menu: ";
+        cin >> pilihan;
+
+        if (pilihan == 1) {
+            tampilkanBuku();
+        }
+        else if (pilihan == 2) {
+            pinjamBuku();
+        }
