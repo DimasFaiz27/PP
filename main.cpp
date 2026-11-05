@@ -25,3 +25,25 @@ int tampilkanBuku() {
 
     return 0;
 }
+
+int pinjamBuku() {
+    int nomor;
+
+    tampilkanBuku();
+
+    cout << "\nPilih nomor buku: ";
+    cin >> nomor;
+
+    if (nomor < 1 || nomor > 5) {
+        cout << "Nomor tidak valid!\n";
+    }
+    else if (tersedia[nomor - 1] == 1) {
+        tersedia[nomor - 1] = 0;
+        cout << "Buku berhasil dipinjam!\n";
+    }
+    else {
+        cout << "Buku sedang dipinjam!\n";
+    }
+
+    return 0;
+}
